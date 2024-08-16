@@ -15,7 +15,7 @@ Deze volledige versie kan dan naadloos worden aangesloten op RPA systemen die al
 Met de toevoeging van AI aan RPA systemen kan:
 
 - Snel en accuraat gedetecteerd worden wat de kern van een bezwaar is
-- Een unieke antwoordbrief opgesteld worden voor elk bezwaar
+- Een gepersonalizeerde antwoordbrief opgesteld worden
 - Beter omgegaan worden met ongestructureerde of incomplete bezwaren
 </strong>
 <br><br>
