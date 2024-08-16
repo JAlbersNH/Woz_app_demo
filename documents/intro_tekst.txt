@@ -1,0 +1,20 @@
+De WOZ Autoresponder is speciaal ontworpen voor beoordelaars van WOZ-bezwaren. 
+Met de app kunnen beoordelaars eenvoudig ingediende documenten, zoals bezwaarbrieven en ondersteunend bewijs, uploaden.
+
+<br><br>
+De ingebouwde AI analyseert de documenten grondig en verzamelt de meest relevante informatie. 
+Zo kan sneller worden bepaald of een bezwaar gegrond is of niet.
+
+<br><br> 
+Nadat de beoordelaar zijn conclusies heeft geregistreerd, helpt de app ook bij het opstellen van een reactie brief. 
+Deze moet dan alleen nog kort nagelezen worden.
+<br><br>
+<strong>
+Latere versies van de app app zullen all informatie voor elk bezwaar zoals fotos, omschrijvingen en uitspraken van de rechtbank tonen. 
+Deze volledige versie kan dan naadloos worden aangesloten op RPA systemen die al ontwikkeld zijn voor vergelijkbare doeleinden.
+Met de toevoeging van AI aan RPA systemen kan:
+- Snel en accuraat gedetecteerd worden wat de kern van een bezwaar is
+- Een unieke antwoordbrief opgesteld worden voor elk bezwaar
+- Beter omgegaan worden met ongestructureerde of incomplete bezwaren
+</strong>
+<br><br>

@@ -68,7 +68,9 @@ else:
 
 with col3:
     st.markdown("<h1 style='text-align: left; color: black;'>Woz autoresponder</h1>", unsafe_allow_html=True)
-    st.markdown("<div style='font-size:18px; line-height:1.6; color:#4a4a4a; text-align:left;'> De WOZ Autoresponder is speciaal ontworpen voor beoordelaars van WOZ-bezwaren. Met deze app kunnen beoordelaars eenvoudig de ingediende documenten, zoals bezwaarbrieven en ondersteunend bewijs, uploaden.<br><br>De ingebouwde AI analyseert de documenten grondig en verzamelt de meest relevante informatie. Zo kan sneller worden bepaald of een bezwaar gegrond is of niet.<br><br> Latere versies van de app app zullen all informatie voor elk bezwaar zoals fotos, omschrijvingen en uitspraken van de rechtbank tonen. Nadat de beoordelaar zijn conclusies heeft geregistreerd, helpt de app ook bij het opstellen van een reactie brief. Deze moet dan alleen nog kort nagelezen worden.<br><br><br><br></div>", unsafe_allow_html=True)
+    with open('documents/intro_tekst.txt') as tekst:
+                            intro_tekst = tekst.read()
+    st.markdown(f"<div style='font-size:18px; line-height:1.6; color:#4a4a4a; text-align:left;'> {intro_tekst}</div>", unsafe_allow_html=True)
     
 
 def main():
