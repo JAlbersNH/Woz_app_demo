@@ -12,6 +12,7 @@ Deze moet dan alleen nog kort nagelezen worden.
 <strong>
 Latere versies van de app app zullen all informatie voor elk bezwaar zoals fotos, omschrijvingen en uitspraken van de rechtbank tonen. 
 Deze volledige versie kan dan naadloos worden aangesloten op RPA systemen die al ontwikkeld zijn voor vergelijkbare doeleinden.
+
 Met de toevoeging van AI aan RPA systemen kan:
 
 - Snel en accuraat gedetecteerd worden wat de kern van een bezwaar is
