@@ -34,8 +34,8 @@ st.set_page_config(
     initial_sidebar_state= "expanded"
 )
 
-sidebar_logo = 'Images\Logo_transparant.png'
-main_body_logo = 'Images\Logo_transparant.png'
+sidebar_logo = 'Images/Logo_transparant.png'
+main_body_logo = 'Images/Logo_transparant.png'
 
 st.logo(sidebar_logo, icon_image=main_body_logo)
 
