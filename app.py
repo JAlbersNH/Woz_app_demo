@@ -68,7 +68,7 @@ else:
 
 with col3:
     st.markdown("<h1 style='text-align: left; color: black;'>Woz autoresponder</h1>", unsafe_allow_html=True)
-    st.markdown("<div style='font-size:18px; line-height:1.6; color:#4a4a4a; text-align:left;'> De WOZ Autoresponder is speciaal ontworpen voor beoordelaars van WOZ-bezwaren. Met deze app kunnen beoordelaars eenvoudig de ingediende documenten, zoals bezwaarbrieven en ondersteunend bewijs, uploaden.<br><br>De ingebouwde AI analyseert de documenten grondig en distilleert automatisch de meest relevante informatie. Zo kan sneller worden bepaald of een bezwaar gegrond is of niet.<br><br>De app toont verzamelt all informatie voor elk bezwaar zoals fotos, omschrijvingen en uitspraken van de rechtbank. Nadat de beoordelaar een conclusie heeft geregistreerd bij elke grief helpt de app ook bij het opstellen van een reactie brief. Deze moet dan alleen nog kort nagelezen te worden voordat het process kan worden gesloten.<br><br><br><br></div>", unsafe_allow_html=True)
+    st.markdown("<div style='font-size:18px; line-height:1.6; color:#4a4a4a; text-align:left;'> De WOZ Autoresponder is speciaal ontworpen voor beoordelaars van WOZ-bezwaren. Met deze app kunnen beoordelaars eenvoudig de ingediende documenten, zoals bezwaarbrieven en ondersteunend bewijs, uploaden.<br><br>De ingebouwde AI analyseert de documenten grondig en verzamelt de meest relevante informatie. Zo kan sneller worden bepaald of een bezwaar gegrond is of niet.<br><br> Latere versies van de app app zullen all informatie voor elk bezwaar zoals fotos, omschrijvingen en uitspraken van de rechtbank tonen. Nadat de beoordelaar zijn conclusies heeft geregistreerd, helpt de app ook bij het opstellen van een reactie brief. Deze moet dan alleen nog kort nagelezen worden.<br><br><br><br></div>", unsafe_allow_html=True)
     
 
 def main():
@@ -93,14 +93,9 @@ def main():
                             text += page.extract_text()
                         with open('documents/sample_grieven_response.txt') as tekst:
                             sample_grieven_response = tekst.read()
-                            print('---------------------------------------')
-                            print(sample_grieven_response)
-                            print('---------------------------------------')
-
-
 
                             query = f'Haal alleen de paragrafen waarin bezwaar wordt gemaakt uit deze brief en neem ze woord voor woord over: {text}. Maak dan een bullet list waarin elke paragraaf wordt gekoppeld aan het best passende item in deze lijst: {grieven}. Geef je antwoord in de vorm: item in lijst - bijpassende paragraaf. dus het moet er zo uitzien: {sample_grieven_response}'
-                            print(query)
+
                         client = OpenAI()
 
                         response = client.chat.completions.create(
@@ -112,20 +107,13 @@ def main():
                             ]
                         )
                     
-                    #with col1:
-                        #binary_data = pdf.getvalue()
-                        #pdf_viewer(input=binary_data, height=800)
-                    #with col1:
                     with col2:
                         binary_data = pdf.getvalue()
                         pdf_viewer(input=binary_data, height=1000)
-                    # with st.container(height=800):
-                    #     st.write(response.choices[0].message.content)
 
                     with st.sidebar:
                         with st.container():
                             grievendict = {}
-                            # print(response.choices[0].message.content)
 
                             # Process each line in the input data
                             for line in response.choices[0].message.content.strip().splitlines():
@@ -194,17 +182,7 @@ def main():
             elif st.session_state[f'grief{i}'] == 0:
                 ongegrond.append(grief)
             opmerkingen_dict[f'{grief}'] = st.session_state[f'opmerking_grief{i}']
-        # with sidebar_container.container():
-        #     with st.container(border=True):
-        #         st.write('Gegrond bevonden grieven')
-        #         for i in gegrond:
-        #             st.markdown("- " + i)
-
-        #     with st.container(border=True):
-        #         st.write('Ongegrond bevonden grieven')
-        #         for i in ongegrond:
-        #             st.markdown("- " + i)
-              
+ 
         if gegrond == []:
             gegrond = "Geen"
         if ongegrond == []:
