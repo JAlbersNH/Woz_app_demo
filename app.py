@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 import os
 import pandas as pd
 from streamlit_pdf_viewer import pdf_viewer
-import pyautogui
+from pyautogui import hotkey
 import streamlit.components.v1 as components
 
 
@@ -236,7 +236,7 @@ def main():
                 with st.sidebar:
                     restart = st.button('Restart')        
                     if restart:
-                        pyautogui.hotkey("ctrl","F5")                   
+                        hotkey("ctrl","F5")                   
             
 if __name__ == "__main__":
     main()
