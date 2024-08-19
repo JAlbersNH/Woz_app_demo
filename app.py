@@ -28,7 +28,7 @@ grieven = first_column.squeeze().tolist()
 
 
 st.set_page_config(
-    page_title="Woz-App",
+    page_title="WOZ-App",
     page_icon='Images/logo.png',
     layout="wide",
     initial_sidebar_state= "expanded"
