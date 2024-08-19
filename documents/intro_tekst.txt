@@ -7,10 +7,10 @@ Nadat de beoordelaar zijn conclusies heeft geregistreerd, helpt de app bij het o
 <strong>
 In opkomende versies van de app wordt aanvullende informatie voor elk bezwaar zoals foto's, omschrijvingen en uitspraken van de rechtbank getoond worden bij de juiste grief. Deze volledige versie kan dan naadloos worden aangesloten op huidige applicaties en RPA-systemen die al ontwikkeld zijn voor vergelijkbare doeleinden. Met de toevoeging van AI aan RPA en huidige applicaties kan: 
 
-Snel en accuraat gedetecteerd worden wat de kernredenen van een bezwaar zijn 
+- Snel en accuraat gedetecteerd worden wat de kernredenen van een bezwaar zijn 
 
-Een gepersonaliseerde antwoordbrief opgesteld worden 
+- Een gepersonaliseerde antwoordbrief opgesteld worden 
 
-Beter omgegaan worden met ongestructureerde of incomplete bezwaren 
+- Beter omgegaan worden met ongestructureerde of incomplete bezwaren 
 </strong>
 <br><br>
