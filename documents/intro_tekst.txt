@@ -4,7 +4,7 @@ De ingebouwde AI analyseert de tekst grondig en verzamelt alle bezwaarredenen di
  
 Nadat de beoordelaar zijn conclusies heeft geregistreerd, helpt de app bij het opstellen van een reactie op bezwaar. Deze moet dan alleen nog kort nagelezen worden. <br><br>
 
-<strong>
+<b>
 In opkomende versies van de app wordt aanvullende informatie voor elk bezwaar zoals foto's, omschrijvingen en uitspraken van de rechtbank getoond worden bij de juiste grief. Deze volledige versie kan dan naadloos worden aangesloten op huidige applicaties en RPA-systemen die al ontwikkeld zijn voor vergelijkbare doeleinden. Met de toevoeging van AI aan RPA en huidige applicaties kan: 
 
 - Snel en accuraat gedetecteerd worden wat de kernredenen van een bezwaar zijn 
@@ -12,5 +12,5 @@ In opkomende versies van de app wordt aanvullende informatie voor elk bezwaar zo
 - Een gepersonaliseerde antwoordbrief opgesteld worden 
 
 - Beter omgegaan worden met ongestructureerde of incomplete bezwaren 
-</strong>
+</b>
 <br><br>
