@@ -67,7 +67,7 @@ else:
 
 
 with col3:
-    st.markdown("<h1 style='text-align: left; color: black;'>Woz autoresponder</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: left; color: black;'>WOZ autoresponder</h1>", unsafe_allow_html=True)
     with open('documents/intro_tekst.txt') as tekst:
                             intro_tekst = tekst.read()
     st.markdown(f"<div style='font-size:18px; line-height:1.6; color:#4a4a4a; text-align:left;'> {intro_tekst}</div>", unsafe_allow_html=True)
