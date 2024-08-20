@@ -101,7 +101,7 @@ def main():
                         client = OpenAI()
 
                         response = client.chat.completions.create(
-                        model="gpt-4o",
+                        model="gpt-4",
                         # response_format={ "type": "json_object" },
                             messages=[
                                 {"role": "user",
@@ -202,7 +202,7 @@ def main():
                     client = OpenAI()
 
                     response = client.chat.completions.create(
-                    model="gpt-4o",
+                    model="gpt-4",
                     # response_format={ "type": "json_object" },
                         messages=[
                             {"role": "user",
