@@ -67,7 +67,7 @@ else:
 
 
 with col3:
-    with st.container(border=True, height = 700):
+    with st.container(border=True, height = 600):
         st.markdown("<h1 style='text-align: left; color: black;'>WOZ autoresponder</h1>", unsafe_allow_html=True)
         with open('documents/intro_tekst.txt') as tekst:
             intro_tekst = tekst.read()
@@ -212,8 +212,8 @@ def main():
                     )
                 st.title('Antwoord template:')
                 download = st.download_button('Download', response.choices[0].message.content)  # Defaults to 'text/plain'
-
-                st.write(response.choices[0].message.content)
+                with st.container(border=True,height = 700):
+                    st.write(response.choices[0].message.content)
                 with st.sidebar:
                     restart = st.button('Restart')        
                     if restart:
