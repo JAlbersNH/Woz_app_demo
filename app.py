@@ -60,7 +60,7 @@ st.markdown(
 
 main_tekst_container = st.empty()
 if 'grief1' not in st.session_state:
-    col1,col2, col3 = st.columns([0.5,2,1])
+    col1,col2, col3 = st.columns([0.1,2,1])
 else:
     col1,col2, col3 = st.columns([2,0.5,1])
 
